@@ -1,0 +1,23 @@
+[33mcommit aa250b218104db40f3d3773104bb3385c13fc19f[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: KS-hitij <149416585+KS-hitij@users.noreply.github.com>
+Date:   Thu Aug 29 21:59:55 2024 +0530
+
+    Remove similarity.pkl from tracking
+
+[33mcommit 6435e01cb266b5e739e8b9a4ae6dbc7259409033[m
+Author: KS-hitij <149416585+KS-hitij@users.noreply.github.com>
+Date:   Thu Aug 29 21:44:12 2024 +0530
+
+    Remove similarity.pkl from LFS tracking
+
+[33mcommit 5c531a5012ff14fde9bebd15a520ceac05b8bd1f[m
+Author: KS-hitij <149416585+KS-hitij@users.noreply.github.com>
+Date:   Thu Aug 29 21:36:31 2024 +0530
+
+    Track similarity.pkl with Git LFS
+
+[33mcommit 7c64c8f5d6edf164aa12ea194a7712b32a842395[m
+Author: KS-hitij <149416585+KS-hitij@users.noreply.github.com>
+Date:   Thu Aug 29 20:39:27 2024 +0530
+
+    Initial commit

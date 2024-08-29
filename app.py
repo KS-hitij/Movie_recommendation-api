@@ -1,6 +1,21 @@
+import os
+import requests
 from flask import Flask, jsonify
 import pickle
 app = Flask(__name__)
+url = "https://drive.google.com/uc?export=download&id=1sauUXQvSGzzANz_ElxC0jkvHQIi4avRK"
+
+
+def download_file(url, filename):
+    response = requests.get(url)
+    with open(filename, "wb") as f:
+        f.write(response.content)
+
+
+if not os.path.exists("similarity.pkl"):
+    download_file(url, "similarity.pkl")
+
+
 movies = pickle.load(open("movies.pkl", "rb"))
 similarity = pickle.load(open("similarity.pkl", "rb"))
 
