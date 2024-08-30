@@ -4,12 +4,8 @@ from flask import Flask, jsonify
 import pickle
 app = Flask(__name__)
 url = "https://drive.google.com/uc?export=download&id=1sauUXQvSGzzANz_ElxC0jkvHQIi4avRK"
-
-
-def download_file(url, filename):
-    response = requests.get(url)
-    with open(filename, "wb") as f:
-        f.write(response.content)
+output = "similarity.pkl"
+gdown.download(url, output, quiet=False)
 
 
 if not os.path.exists("similarity.pkl"):
