@@ -31,7 +31,7 @@ def recommend(movie):
         movie_counter = "movie"+movie_counter
         counter += 1
         value = movies.iloc[i[0]].title
-        movie_id = movies.iloc[i[0]].movie_id
+        movie_id = int(movies.iloc[i[0]].movie_id)
         result[movie_counter] = {"title":value,"id":movie_id}
     return jsonify(result)
 
