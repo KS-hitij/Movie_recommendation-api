@@ -1,9 +1,11 @@
 import os
 import requests
 from flask import Flask, jsonify
+from flask_cors import CORS
 import pickle
 import gdown
 app = Flask(__name__)
+CORS(app)
 url = "https://drive.google.com/uc?export=download&id=1sauUXQvSGzzANz_ElxC0jkvHQIi4avRK"
 output = "similarity.pkl"
 gdown.download(url, output, quiet=False)
