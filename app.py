@@ -21,7 +21,7 @@ similarity = pickle.load(open("similarity.pkl", "rb"))
 
 @app.route('/movies/<string:movie>')
 def recommend(movie):
-    movie_index = movies[movies["title"].lower() == movie.lower()].index[0]
+    movie_index = movies[movies["title"].str.lower() == movie.lower()].index[0]
     distances = similarity[movie_index]
     movies_list = sorted(list(enumerate(distances)), reverse=True, key=lambda x: x[1])[1:16]
     result = {}
